@@ -18,7 +18,7 @@
 }
 
 body {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   color: var(--text-color);
   background-color: var(--background-color);
   height: 100%;
@@ -118,8 +118,8 @@ button:focus {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
   width: 100%;
   text-align: center;
 }
@@ -257,11 +257,30 @@ button:focus,
   width: 80%;
 }
 
+.meetappimg {
+  height: 150px;
+}
+
+.pokemonimg {
+  height: 200px;
+}
+
+.chatappimg {
+  width: 200px;
+}
+
 .grid__item {
   display: inline;
   width: 33%;
   background-color: var(--dark-grey);
   padding: 10px;
+}
+
+.links a,
+.links p {
+  display: inline;
+  margin-right: 5px;
+  color: black;
 }
 
 @supports (display: grid) {
@@ -308,9 +327,9 @@ button:focus,
     line-height: 1.2;
   }
 
-  footer {
+  /* footer {
     position: static;
-  }
+  } */
 
   .navigation-list {
     text-align: center;
@@ -375,9 +394,9 @@ button:focus,
 }
 
 @media all and (min-width: 496px) and (max-width: 768px) {
-  footer {
+  /* footer {
     position: static;
-  }
+  } */
 
   .navigation-list li {
     font-size: var(--large);
@@ -423,9 +442,9 @@ button:focus,
     margin-left: 40px;
   }
 
-  footer {
+  /* footer {
     position: static;
-  }
+  } */
 
   .navigation-list {
     width: 90%;
@@ -448,4 +467,3 @@ button:focus,
     font-size: 36px;
   }
 }
-

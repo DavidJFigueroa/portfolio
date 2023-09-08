@@ -1,95 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Selected Works</title>
     <link rel="shortcut icon" href="img/favicon.ico" />
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.production.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/style.production.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
     <header class="page-header">
-        <img src="img/logoipsum-290.svg" alt="mylogo" class="page-header__item" />
-        <nav class="main-navigation page-header__item">
-            <ul role="menubar" class="navigation-list">
-               <li role="presentation">
-                  <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item">Home</a>
-               </li >
-               <li role="presentation">
-                  <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-               </li>
-               <li role="presentation">
-                <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
-             </li>
-               <li role="presentation">
-                  <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-               </li>
-            </ul>
-         </nav>
+      <img src="img/logoipsum-290.svg" alt="mylogo" class="page-header__item" />
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-     <section class="work-section">
+      <section class="work-section">
         <h1>Work</h1>
         <div class="grid">
           <div class="grid__item">
+            <h2>ClassicFlix React App</h2>
+            <a href="https://classicflix-djf.netlify.app/">
+              <img
+                class="pokemonimg"
+                src="./assets/classicflix-react.png"
+                alt="classicflixreact"
+            /></a>
+            <p>
+              Classic Flix is a movie app created with react. Its states are
+              handled with redux. It displays movie that are fetched from an API
+              database. It lets users register, deregister, update their
+              information, add and delete movies from their favorites.
+            </p>
+            <div class="links">
+              <a href="https://classicflix-djf.netlify.app/">Live Version</a>
+              <p>&</p>
+              <a href="https://github.com/DavidJFigueroa/classicflix-client"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="grid__item">
+            <h2>Meet App</h2>
+            <a href="https://davidjfigueroa.github.io/meet-app/">
+              <img class="pokemonimg" src="./assets/meetapp.png" alt="meetapp"
+            /></a>
+            <p>
+              A serverless, progressive web application (PWA) with React using a
+              test-driven development (TDD) technique. The application uses the
+              Google Calendar API to fetch upcoming events.
+            </p>
+            <div class="links">
+              <a href="https://davidjfigueroa.github.io/meet-app/"
+                >Live Version</a
+              >
+              <p>&</p>
+              <a href="https://github.com/DavidJFigueroa/meet-app">GitHub</a>
+            </div>
+          </div>
+          <div class="grid__item">
             <h2>Something something</h2>
             <p>
-              Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla. bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla. bla  bla. 
+              Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+              bla bla bla. bla bla bla bla bla bla bla bla bla bla bla bla bla
+              bla bla bla bla bla.
             </p>
             <a href="#">See project on GitHub</a>
-         </div>
-         <div class="grid__item">
-          <h2>Something something</h2>
-          <p>
-            Bla blub blub blub blub blub blub blub blub blub blub blub blub blub blub blub blub blub blub . Blub blub blub blub blub blub blub blub blub blub blub blub blub blub.
-          </p>
-          <a href="#">See project on GitHub</a>
-        </div>
-        <div class="grid__item">
-          <h2>Something something</h2>
-          <p>Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla. bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla. 
-          </p>
-          <a href="#">See project on GitHub</a>
-        </div>
-        <div class="grid__item">
-          <h2>Something something</h2>
-          <p>
-            Bla blub blub blub blub blub blub blub blub blub blub blub blub blub blub blub blub blub blub.
-          </p>
-          <a href="#">See project on GitHub</a>
-        </div>
-        <div class="grid__item">
-          <h2>Something something</h2>
-          <p>
-            Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-          </p>
-          <a href="#">See project on GitHub</a>
-        </div>
-       
+          </div>
+          <div class="grid__item">
+            <h2>Pokedex App</h2>
+            <a href="https://davidjfigueroa.github.io/my-first-js-app/">
+              <img class="pokemonimg" src="./assets/pokedex.png" alt="pokedex"
+            /></a>
 
-
+            <p>
+              Pokedex is a simple JavaScript application that allows users to
+              browse and view information about various Pokémon, including a
+              search function.
+            </p>
+            <div class="links">
+              <a href="https://davidjfigueroa.github.io/my-first-js-app/"
+                >Live Version</a
+              >
+              <p>&</p>
+              <a href="https://github.com/DavidJFigueroa/my-first-js-app"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="grid__item">
+            <h2>Chat App</h2>
+            <a href="https://github.com/DavidJFigueroa/Chat-App">
+              <img class="chatappimg" src="./assets/chatapp.png" alt="chatapp"
+            /></a>
+            <a href="https://github.com/DavidJFigueroa/Chat-App">
+              <img class="chatappimg" src="./assets/chatapp2.png" alt="chatapp"
+            /></a>
+            <p>
+              The Chat App is a React Native application that allows users to
+              chat with each other in real-time. It also allows users to send
+              pictures and share their location.
+            </p>
+            <div class="links">
+              <a href="https://github.com/DavidJFigueroa/Chat-App">GitHub</a>
+            </div>
+          </div>
         </div>
-     </section>   
+      </section>
     </main>
     <footer class="page-footer">
-        <p>
-            Its you and me against the algorythm
-        </p>
-        <!-- Add your icons here -->
-        <div class="social-media">
-            <a href="" target="_blank">
-                <img src="img/icons8-github.svg" alt="Github"/></a>
-            <a href="" target="_blank">
-                <img src="img/icons8-twitter.svg" alt="Twitter"/></a>
-            <a href="" target="_blank">
-                <img src="img/icons8-linkedin.svg" alt="Linkedin"/></a>
-        </div>
+      <p>Its you and me against the algorythm</p>
+      <!-- Add your icons here -->
+      <div class="social-media">
+        <a href="" target="_blank">
+          <img src="img/icons8-github.svg" alt="Github"
+        /></a>
+        <a href="" target="_blank">
+          <img src="img/icons8-twitter.svg" alt="Twitter"
+        /></a>
+        <a href="" target="_blank">
+          <img src="img/icons8-linkedin.svg" alt="Linkedin"
+        /></a>
+      </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
-</body>
+  </body>
 </html>

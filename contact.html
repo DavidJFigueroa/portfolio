@@ -1,89 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact David Figueroa</title>
     <link rel="shortcut icon" href="img/favicon.ico" />
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.production.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.production.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
     <header class="page-header">
-        <img src="img/logoipsum-290.svg" alt="mylogo" class="page-header__item" />
-        <nav class="main-navigation page-header__item">
-            <ul role="menubar" class="navigation-list">
-               <li role="presentation">
-                  <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-               </li >
-               <li role="presentation">
-                  <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-               </li>
-               <li role="presentation">
-                <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-             </li>
-               <li role="presentation">
-                  <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
-               </li>
-            </ul>
-         </nav>
+      <img src="img/logoipsum-290.svg" alt="mylogo" class="page-header__item" />
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="contact">
-        <h1>Contact</h1>
-        <div class="contact__method">
-            <section class="contact__method--info">
-                <h2>David Jeremias Figueroa</h2>
-                <p>
-                Reuterstrasse 146
-                </p>
-                <p>
-                12059 Berlin
-                </p>
-                <p>
-                Deutschland
-                </p>
-                <br />
-                <a href="tel:+4977777777">Tel: +49 77 777 777</a>
-                <br />
-                <a href="david.jeremias.figueroa@gmail.com"
-                    >Email: david.jeremias.figueroa@gmail.com </a>
-                <br />
-                <a href="david.jeremias.figueroa@gmail.com">Contact Me!</a> 
-            </section>
-            
-            <form method="post" class="contact__method--form" id="contact-form">
-                <label class="contact-label" for="contact-email">E-mail: </label>
-                <input class="contact-input" type="email" id="contact-email" required>
+      <h1>Contact</h1>
+      <div class="contact__method">
+        <form
+          action="https://formsubmit.co/el/dojuzu"
+          method="POST"
+          target="_blank"
+          class="contact__method--form"
+          id="contact-form">
+          <label class="contact-label" for="contact-email">E-mail: </label>
+          <input
+            class="contact-input"
+            type="email"
+            id="contact-email"
+            required />
 
-                <label class="contact-label" for="contact-tel">Telephone: </label>
-                <input class="contact-input" type="tel" id="contact-tel" pattern="\{d3}[\-]\{d3}[\-]\{d4}">
+          <label class="contact-label" for="contact-tel">Telephone: </label>
+          <input
+            class="contact-input"
+            type="tel"
+            id="contact-tel"
+            pattern="\{d3}[\-]\{d3}[\-]\{d4}" />
 
-                <label class="contact-label" for="contact-message">Message: </label>
-                <textarea class="contact-textarea" maxlength="240" rows="5" cols="70" id="contact-message" required></textarea>
+          <label class="contact-label" for="contact-message">Message: </label>
+          <textarea
+            class="contact-textarea"
+            placeholder="How can i help you? : )"
+            maxlength="240"
+            rows="5"
+            cols="70"
+            id="contact-message"
+            required></textarea>
 
-                <input class="submit-button" type="submit" value="Send Message">
-            </form>
-        </div>
+          <input class="submit-button" type="submit" value="Get In Touch" />
+        </form>
+      </div>
     </main>
-    <footer class="page-footer">
-        <p>
-            Its you and me against the algorythm
-        </p>
-        <!-- Add your icons here -->
-        <div class="social-media">
-            <a href="" target="_blank">
-                <img src="img/icons8-github.svg" alt="Github"/></a>
-            <a href="" target="_blank">
-                <img src="img/icons8-twitter.svg" alt="Twitter"/></a>
-            <a href="" target="_blank">
-                <img src="img/icons8-linkedin.svg" alt="Linkedin"/></a>
-        </div>
+    <footer class="page-footer-contact">
+      <p>Its you and me against the algorythm</p>
+      <!-- Add your icons here -->
+      <div class="social-media">
+        <a href="" target="_blank">
+          <img src="img/icons8-github.svg" alt="Github"
+        /></a>
+        <a href="" target="_blank">
+          <img src="img/icons8-twitter.svg" alt="Twitter"
+        /></a>
+        <a href="" target="_blank">
+          <img src="img/icons8-linkedin.svg" alt="Linkedin"
+        /></a>
+      </div>
     </footer>
-    <script src="js/tota11y.min.js"></script>
+    <!-- <script src="js/tota11y.min.js"></script> -->
+
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

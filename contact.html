@@ -46,10 +46,10 @@
       </nav>
     </header>
     <main class="contact">
-      <h1>Contact</h1>
-      <div class="contact__method">
+      <!-- <div class="contact__method">
         <form
-          action="https://formsubmit.co/el/dojuzu"
+          target="_blank"
+          action="https://formsubmit.co/c494657b5a53488b24a577abe2b57ef7"
           method="POST"
           class="contact__method--form"
           id="contact-form">
@@ -78,6 +78,43 @@
             required></textarea>
 
           <input class="submit-button" type="submit" value="Get In Touch" />
+        </form> -->
+
+      <div class="contact__method">
+        <h1>Contact</h1>
+        <form
+          target="_blank"
+          action="https://formsubmit.co/c494657b5a53488b24a577abe2b57ef7"
+          method="POST">
+          <div class="contact__method--form">
+            <div class="form-row">
+              <div class="contact-label">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Full Name"
+                  required />
+              </div>
+              <div class="contact-label">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Email Address"
+                  required />
+              </div>
+            </div>
+          </div>
+          <div class="contact__method--form">
+            <textarea
+              placeholder="Your Message"
+              class="form-control"
+              name="message"
+              rows="10"
+              required></textarea>
+          </div>
+          <button type="submit" class="submit-button">Submit Form</button>
         </form>
       </div>
     </main>

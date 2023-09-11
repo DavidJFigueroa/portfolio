@@ -16,8 +16,8 @@
   /* Font size variables */
   --small: 16px;
   --medium: 20px;
-  --big: 24px;
-  --large: 30px;
+  --big: 28px;
+  --large: 42px;
   --line-height: 1.5;
 }
 
@@ -31,7 +31,7 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   height: 100%;
-  margin-left: 0;
+  margin: 0;
 }
 
 header {
@@ -64,12 +64,18 @@ header {
 
 .navigation-list {
   list-style-type: none;
+  margin-bottom: 16px;
 }
 
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
   font-size: var(--large);
+}
+
+#mylogo {
+  height: 80px;
+  margin-top: 10px;
 }
 
 h1 {
@@ -109,8 +115,6 @@ a:active {
 }
 
 main {
-  position: relative;
-  overflow-y: auto;
   margin: 20px;
 }
 
@@ -140,10 +144,12 @@ button:focus {
 }
 
 footer {
-  /* position: fixed;
-  bottom: 0; */
   width: 100%;
   text-align: center;
+}
+
+footer > p {
+  margin-bottom: 0;
 }
 
 /* index.html */
@@ -164,12 +170,11 @@ footer {
   border-radius: 50%;
 }
 
-/* about.html */
+/* skills.html */
 
-.about {
+.skills {
   text-align: center;
-  margin-top: -20px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,9 +190,14 @@ footer {
   justify-content: center;
 }
 
-.about ul {
-  list-style-type: none;
-  padding: 0;
+.skills > h2 {
+  margin: 5px;
+  text-decoration: underline;
+}
+
+.skills > p {
+  font-size: var(--large);
+  margin: 36px;
 }
 
 .button {
@@ -217,6 +227,7 @@ button:focus,
 
 .logosvg {
   height: 200px;
+  margin-top: 30px;
 }
 
 @-webkit-keyframes color-change {
@@ -290,6 +301,10 @@ button:focus,
   justify-content: center;
 }
 
+.contact__method > h1 {
+  margin-top: 16px;
+}
+
 .contact__method--form {
   padding: 10px;
 }
@@ -305,7 +320,6 @@ input,
 textarea {
   display: block;
   width: 100%;
-
   padding: 10px;
 }
 
@@ -334,8 +348,10 @@ textarea {
 /* work.html */
 
 .work-section {
-  margin: -30px auto 20px auto;
+  /* margin: -30px auto 20px auto; */
+  margin: auto;
   width: 80%;
+  text-align: center;
 }
 
 .meetappimg {
@@ -357,11 +373,42 @@ textarea {
   padding: 10px;
 }
 
+a > h2 {
+  color: var(--text-color);
+}
+
 .links a,
 .links p {
+  font-size: var(--medium);
   display: inline;
   margin-right: 5px;
-  color: black;
+  color: var(--primary-color);
+}
+
+/* project pages */
+
+.contact__method > h2 {
+  text-decoration: underline;
+}
+
+.contact__method > p {
+  font-size: var(--medium);
+}
+
+.projectimg {
+  height: 400px;
+}
+
+.project-links a,
+.project-links p {
+  display: inline;
+  margin-right: 5px;
+  font-size: var(--medium);
+}
+
+.chatimg {
+  margin: 10px;
+  height: 400px;
 }
 
 @supports (display: grid) {
@@ -415,7 +462,7 @@ textarea {
 }
 
 .grid__item a {
-  color: var(--background-color);
+  color: var(--primary-color);
 }
 
 .page-footer {
@@ -438,21 +485,27 @@ textarea {
   }
 
   p {
-    font-size: var(--small);
+    font-size: var(--medium);
     line-height: 1.2;
   }
 
-  /* footer {
-    position: static;
-  } */
+  .index {
+    margin-bottom: 20px;
+  }
 
   .navigation-list {
     text-align: center;
     float: none;
   }
 
+  #mylogo {
+    height: 50px;
+    margin-top: 100px;
+    margin-left: 30px;
+  }
+
   .navigation-list li {
-    font-size: var(--small);
+    font-size: var(--large);
   }
 
   .profile {
@@ -483,9 +536,8 @@ textarea {
     width: 30%;
   }
 
-  .logosvg {
-    height: 150px;
-    margin-top: 30px;
+  .work-section {
+    width: 85%;
   }
 
   .grid {
@@ -494,9 +546,26 @@ textarea {
     grid-gap: 10px;
   }
 
+  .grid__item {
+    max-width: 280px;
+  }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
+  }
+
+  .pokemonimg {
+    max-width: 260px;
+    max-height: 160px;
+  }
+
+  .projectimg {
+    max-height: 160px;
+  }
+
+  .projectdescription {
+    max-width: 300px;
   }
 
   form {
@@ -525,14 +594,23 @@ textarea {
     padding: 10px;
     margin: auto;
   }
+
+  .page-footer > p {
+    font-size: var(--small);
+  }
 }
 
 @media all and (min-width: 496px) and (max-width: 768px) {
-  /* footer {
-    position: static;
-  } */
+  p {
+    font-size: var(--medium);
+  }
+
+  .navigation-list {
+    padding: 0;
+  }
 
   .navigation-list li {
+    margin-left: 10px;
     font-size: var(--large);
   }
 

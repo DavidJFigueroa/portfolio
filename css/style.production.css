@@ -711,6 +711,22 @@ a > h2 {
     max-width: 280px;
     max-height: 160px;
   }
+
+  .chatappimg {
+    width: 90px;
+  }
+
+  .meetappdescription {
+    margin-bottom: 40px;
+  }
+
+  .pokedexdescription {
+    margin-bottom: 60px;
+  }
+
+  .movieapidescription {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -728,5 +744,23 @@ a > h2 {
   .navigation-list {
     width: 90%;
     font-size: 36px;
+  }
+
+  .chatdiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pokedexdescription {
+    margin-bottom: 65px;
+  }
+
+  .reactdescription,
+  .meetappdescription {
+    margin-bottom: 40px;
+  }
+
+  .angulardescription {
+    margin-bottom: 40px;
   }
 }

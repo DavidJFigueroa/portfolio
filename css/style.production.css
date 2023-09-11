@@ -684,13 +684,27 @@ a > h2 {
     width: 600px;
   }
 
-  /* footer {
-    position: static;
-  } */
-
   .navigation-list {
     width: 90%;
     font-size: var(--large);
+  }
+
+  .grid {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 10px;
+    max-width: 700px;
+  }
+
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+
+  .pokemonimg {
+    max-width: 280px;
+    max-height: 160px;
   }
 }
 

@@ -350,7 +350,7 @@ textarea {
 .work-section {
   /* margin: -30px auto 20px auto; */
   margin: auto;
-  width: 80%;
+  /* width: 80%; */
   text-align: center;
 }
 
@@ -364,6 +364,10 @@ textarea {
 
 .chatappimg {
   width: 200px;
+}
+
+.grid {
+  margin: auto;
 }
 
 .grid__item {
@@ -651,6 +655,7 @@ a > h2 {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-gap: 10px;
+    width: 90%;
   }
 
   .grid__item:last-child {
@@ -694,7 +699,7 @@ a > h2 {
     grid-template-columns: repeat(2, 300px);
     grid-template-rows: repeat(2, auto);
     grid-gap: 10px;
-    max-width: 700px;
+    max-width: 600px;
   }
 
   .grid__item:last-child {
